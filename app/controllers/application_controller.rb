@@ -8,4 +8,9 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+  get "/app/models/dog.rb" do
+    Dog.new
+  end
+  
 end
